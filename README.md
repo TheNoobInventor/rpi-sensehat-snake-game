@@ -2,7 +2,7 @@
 Blah blah blah
 
 
-![SenseHat Coordinates](Coordinates.png)
+![SenseHat Coordinates](coordinates.png)
 
 Test code:
 [Trinket] (https://trinket.io/sense-hat)
