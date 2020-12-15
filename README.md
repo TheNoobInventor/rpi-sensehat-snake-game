@@ -1,5 +1,8 @@
-# rpi-sensehat-snake-game
+# Raspberry Pi Sensehat Snake game
 Blah blah blah
 
 
-Trinket (https://trinket.io/sense-hat)
+![SenseHat Coordinates](Coordinates.png)
+
+Test code:
+[Trinket] (https://trinket.io/sense-hat)
