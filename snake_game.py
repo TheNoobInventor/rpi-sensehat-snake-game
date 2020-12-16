@@ -10,7 +10,7 @@ food = (255, 0,  15)
 #--- Snake class
 class Snake:
 
-    # Assign initial values to the x and y coordinates of the snake.
+    #--- Assign initial values to the x and y coordinates of the snake.
     def __init__(self, pos_x, pos_y):
         
         #--- Instance attributes
@@ -23,7 +23,7 @@ class Snake:
         self.generateFood = False                   # Generate food flag
         self.gameOver = False                       # Game over flag
         self.snakeMovementDelay = 0.8               # Initial delay for the snake's movement [seconds]
-        self.speedUpSnakeMovement = -0.015          # Time deducted to speed up snake's movment [seconds]
+        self.speedUpSnakeMovement = -0.025          # Time deducted to speed up snake's movment [seconds]
         self.sense = SenseHat()                     # Initialize SenseHat class
     
     #--- Method to spawn food coordinates on the LED matrix.
