@@ -114,7 +114,7 @@ def main():
     # Set pixel of the food coordinates to food color.
     snake.sense.set_pixel(snake.food_x, snake.food_y, food)
     
-    # Main loop
+    # Main loop.
     while not snake.gameOver:
         # Check if snake has eaten food
         snake.food_check()
