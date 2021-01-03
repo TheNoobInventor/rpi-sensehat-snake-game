@@ -47,11 +47,11 @@ The snake game starts out with a size of one pixel moving in a default position,
 
 The diagram below (courtesy of [Raspberry Pi Projects](https://projects.raspberrypi.org/en/projects/getting-started-with-the-sense-hat/5)) shows the SenseHat LED matrix coordinates.
 
-![SenseHat Coordinates](coordinates.png)
+![SenseHat Coordinates](images/coordinates.png)
 
 ## "Game Pseudocode"
 
-![Snake game flow chart](snake_game_flow_chart.png)
+![Snake game flow chart](images/snake_game_flow_chart.png)
 
 explain checking borders
 
