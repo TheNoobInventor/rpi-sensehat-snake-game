@@ -4,8 +4,9 @@ from time import sleep
 from random import randint
 
 #--- RGB color variables
-snake_color = (0, 230, 10)
-food = (255, 0,  15)
+snake_color = (0, 74, 9)
+food = (180, 0,  15)
+game_over_color = (118, 60, 69)
 
 #--- Snake class
 class Snake:
@@ -22,8 +23,8 @@ class Snake:
         self.MATRIX_MIN = 0                         # Minimum size of the LED matrix coordinates
         self.generateFood = False                   # Generate food flag
         self.gameOver = False                       # Game over flag
-        self.snakeMovementDelay = 0.8               # Initial delay for the snake's movement [seconds]
-        self.speedUpSnakeMovement = -0.025          # Time deducted to speed up snake's movment [seconds]
+        self.snakeMovementDelay = 0.75              # Initial delay for the snake's movement [seconds]
+        self.speedUpSnakeMovement = -0.032          # Time deducted to speed up snake's movment [seconds]
         self.sense = SenseHat()                     # Initialize SenseHat class
     
     #--- Method to spawn food coordinates on the LED matrix.
@@ -33,7 +34,7 @@ class Snake:
             self.food_x = randint(0, self.MATRIX_MAX)
             self.food_y = randint(0, self.MATRIX_MAX)
 
-            # Check if any conflicts - snake and food coordinates coinciding - exists
+            # Check if any conflicts - snake and food coordinates coinciding - exists.
             self.conflicts =  [(x,y) for x, y in zip(self.snake_pos_x, self.snake_pos_y) if x == self.food_x and y == self.food_y]
 
             # If no conflicts exist, the food coordinates are valid, exit the loop. Otherwise the process is repeated.
@@ -54,10 +55,10 @@ class Snake:
 
     #--- Method to check if the snake has bitten itself.
     def death_check(self):
-        for i in range(1, len(self.snake_pos_x)): # starts at 1 because the snake can't bite its own head.
-            # The game is over if the snake bites itself.
+        for i in range(1, len(self.snake_pos_x)): # starts at 1 because the snake can't bite its own head
+            # The game is over if the snake bites itself
             if self.snake_pos_x[i] == self.snake_pos_x[0] and self.snake_pos_y[i] == self.snake_pos_y[0]:
-                self.sense.show_message("Game Over :(")
+                self.sense.show_message("Game Over :(", text_colour = game_over_color, back_colour= (0,0,0))
                 self.sense.clear()
                 self.gameOver = True
 
@@ -116,7 +117,7 @@ def main():
     
     # Main loop.
     while not snake.gameOver:
-        # Check if snake has eaten food
+        # Check if snake has eaten food.
         snake.food_check()
 
         # Assign the penultimate (from the tail) coordinates to be the tail's coordinates, then assign coordinates of the snake element before the penultimate element to be the 
@@ -138,7 +139,7 @@ def main():
         # Update/refresh LED matrix.
         snake.sense.clear()
         for x, y in zip(snake.snake_pos_x, snake.snake_pos_y):
-            # Set pixels of the snake coordinates to snake color
+            # Set pixels of the snake coordinates to snake color.
             snake.sense.set_pixel(x, y, snake_color)
         if snake.generateFood:
             snake.spawn_food()
@@ -149,7 +150,7 @@ def main():
         # Snake movement delay before the next loop iteration.
         sleep(snake.snakeMovementDelay) 
 
-        # Check if snake has bitten itself. 
+        # Check if snake has bitten itself.
         snake.death_check()
 
 if __name__ == "__main__":
