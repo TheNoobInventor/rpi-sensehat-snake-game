@@ -36,6 +36,9 @@ The SenseHat is equipped with the following sensors and components:
 However, only the joystick and 8x8 LED matrix will be used for the game.
 
 ---
+<p align="center">
+  <img src=images/sensehat_assembled.png>
+</p>
 assembling before and after pictures (including the hdmi, monitor, mouse and keyboard...talk briefly about them)
 
 ---
