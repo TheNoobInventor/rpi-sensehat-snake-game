@@ -70,9 +70,6 @@ Resize and position images well
 
 [<img src="images/thumbnail.png" width="50%">](https://www.youtube.com/watch?v=wFzN4JVDBVA)
 
-https://www.youtube.com/watch?v=wFzN4JVDBVA
-
-link
 
 ## SenseHat Emulator
 
