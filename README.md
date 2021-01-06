@@ -66,7 +66,10 @@ Don't think this needs a separate section.
 
 Resize and position images well
 
-## Video demonstration
+## "Video demonstration"
+
+[<img src="https://img.youtube.com/vi/<VIDEO ID>/maxresdefault.jpg" width="50%">](https://www.youtube.com/watch?v=wFzN4JVDBVA)
+
 
 link
 
