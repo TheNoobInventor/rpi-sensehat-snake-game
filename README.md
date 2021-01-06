@@ -68,8 +68,9 @@ Resize and position images well
 
 ## "Video demonstration"
 
-[<img src="https://img.youtube.com/vi/<VIDEO ID>/maxresdefault.jpg" width="50%">](https://www.youtube.com/watch?v=wFzN4JVDBVA)
+[<img src="https://img.youtube.com/vi/https://www.youtube.com/watch?v=wFzN4JVDBVA/maxresdefault.jpg" width="50%">](https://www.youtube.com/watch?v=wFzN4JVDBVA)
 
+https://www.youtube.com/watch?v=wFzN4JVDBVA
 
 link
 
