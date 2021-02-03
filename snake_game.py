@@ -1,14 +1,21 @@
-#--- Import packages
+"""
+
+This is a snake game programmed in python on a Raspberry Pi, making use of the SenseHat add-on board.
+
+"""
+
+
+#--- Import packages.
 from sense_hat import SenseHat
 from time import sleep
 from random import randint
 
-#--- RGB color variables
+#--- RGB color variables.
 snake_color = (0, 74, 9)
 food = (180, 0,  15)
 game_over_color = (118, 60, 69)
 
-#--- Snake class
+#--- Snake class.
 class Snake:
 
     #--- Assign initial values to the x and y coordinates of the snake.
