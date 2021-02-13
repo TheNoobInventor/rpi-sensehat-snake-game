@@ -11,8 +11,8 @@ from time import sleep
 from random import randint
 
 #--- RGB color variables.
-snake_color = (0, 74, 9)
-food = (180, 0,  15)
+snake_color = (0, 50, 9)
+food = (150, 0,  15)
 game_over_color = (118, 60, 69)
 
 #--- Snake class.
