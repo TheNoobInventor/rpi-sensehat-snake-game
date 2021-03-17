@@ -52,7 +52,7 @@ The diagram below (courtesy of [Raspberry Pi Projects](https://projects.raspberr
 The summary of the snake game is illustrated in the flow chart below. To ensure that the snake moves in out of boundaries of the LED matrix correctly, border control is implemented for each move.
 
 <p align="center">
-    <img src=images/snake_game_flow_chart.png>
+    <img src=images/snake_game_flow_chart.jpg>
 </p>
 
 ## Video demonstration
