@@ -1,6 +1,6 @@
 # Raspberry Pi Sensehat Snake game
 
-This is a remake of the popular retro Nokia snake game on a Raspberry Pi 4 equipped with a SenseHat add-on board. The snake game is a common programming project
+This is a remake of the popular retro snake game on a Raspberry Pi 4 equipped with a SenseHat add-on board. The snake game is a common programming project
 used to practice certain concepts such as object-oriented programming and array manipulation. There are a lot of SenseHat snake game
 implementations online, this version attempts to program the game in an easier and well documented way, whilst leaving room for further amends/improvements.
 
