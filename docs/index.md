@@ -58,7 +58,6 @@ The summary of the snake game is illustrated in the flow chart below. To ensure 
 ## Video demonstration
 
 The snake game implementation can be seen by clicking the image below.
-
 [<img src="images/thumbnail.png" width="50%">](https://www.youtube.com/watch?v=wFzN4JVDBVA)
 
 ## SenseHat Emulator

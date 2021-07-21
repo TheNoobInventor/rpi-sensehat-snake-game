@@ -1,6 +1,7 @@
 site_name: Raspberry Pi SenseHat Snake Game
 site_url: ''
 use_directory_urls: False
+edit_uri: ""
 
 theme:
   name: material
